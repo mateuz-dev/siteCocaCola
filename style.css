@@ -1,30 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*---------------------------------------------------------------------*/
+
 body{
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     width: 100vw;
     background: linear-gradient(180deg, rgba(218, 59, 63, 0) 15.06%, #DA3B3F 100%), linear-gradient(179.29deg, #CF2425 11.93%, rgba(207, 36, 37, 0) 99.39%);
     mix-blend-mode: normal;
 }
 
+/*---------------------------------------------------------------------*/
+
+header{
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
 #menu{
     display: flex;
     align-items: center;
-    justify-content: start;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: white;
 }
 #lines{
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
-#line1, #line2, #line3{
+#line1, #line3{
     border-bottom: 2px solid white;
-    width: 20px;
+    width: 24px;
 }
+#line2{
+    border-bottom: 2px solid white;
+    width: 36px;
+}
+#menu p{
+    margin-left: 20px;
+}
+
+/*---------------------------------------------------------------------*/
 
 main{
     display: flex;
@@ -32,3 +56,43 @@ main{
     justify-content: center;
     flex-grow: 1;
 }
+
+#conteudo{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 650px;
+    padding-right: 250px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-style: bold;
+    color: white;
+    text-align: right;
+}
+#conteudo p{
+    margin-right: 30px;
+}
+#imgCocaCola{
+    width: 1000px;
+}
+
+#imgGarrafa{
+    width: 150px;
+}
+
+/*---------------------------------------------------------------------*/
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 25px;
+    margin-bottom: 10px;
+}
+
+#mapa{
+    width: 50px;
+}
+
+/*---------------------------------------------------------------------*/
+
