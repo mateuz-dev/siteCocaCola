@@ -31,6 +31,9 @@ header{
     font-size: 16px;
     color: white;
 }
+#menu:hover{
+    cursor: pointer;
+}
 #lines{
     display: flex;
     flex-direction: column;
@@ -61,7 +64,7 @@ main{
     display: flex;
     align-items: center;
     position: absolute;
-    width: 650px;
+    width: 690px;
     padding-right: 250px;
     font-family: 'Montserrat', sans-serif;
     font-size: 36px;
@@ -73,11 +76,10 @@ main{
     margin-right: 30px;
 }
 #imgCocaCola{
-    width: 1000px;
+    width: 85%;
 }
-
 #imgGarrafa{
-    width: 150px;
+    width: 300px;
 }
 
 /*---------------------------------------------------------------------*/
@@ -93,6 +95,58 @@ footer{
 #mapa{
     width: 50px;
 }
+#mapa:hover{
+    cursor: pointer;
+}
 
 /*---------------------------------------------------------------------*/
 
+@media (max-width: 900px) {
+    #conteudo{
+        width: 650px;
+        width: 0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    #conteudo p{
+        margin: 0;
+        width: 200px;
+        text-align: center;
+        font-size: 24px;
+    }
+    #imgGarrafa{
+        width: 175px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    header{
+        margin-top: 75px;
+    }
+    footer{
+        margin-bottom: 50px;
+    }
+    #conteudo{
+        width: 300px;
+        width: 0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    #conteudo p{
+        margin: 0;
+        width: 100px;
+        text-align: center;
+        font-size: 16px;
+    }
+    #imgGarrafa{
+        width: 100px;
+    }
+    #menu{
+        width: 100px;
+    }
+}
