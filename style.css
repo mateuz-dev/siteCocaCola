@@ -124,10 +124,10 @@ footer{
 
 @media (max-width: 550px) {
     header{
-        margin-top: 75px;
+        margin-top: 35px;
     }
     footer{
-        margin-bottom: 50px;
+        margin-bottom: 35px;
     }
     #conteudo{
         width: 300px;
@@ -139,7 +139,38 @@ footer{
     }
     #conteudo p{
         margin: 0;
+        width: 130px;
+        text-align: center;
+        font-size: 20px;
+    }
+    #imgGarrafa{
         width: 100px;
+    }
+    #menu{
+        width: 75px;
+    }
+}
+
+
+@media (max-width: 320px) {
+    header{
+        margin-left: 15px;
+        margin-top: 30px;
+    }
+    footer{
+        margin-bottom: 15px;
+    }
+    #conteudo{
+        width: 300px;
+        width: 0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    #conteudo p{
+        margin: 0;
+        width: 130px;
         text-align: center;
         font-size: 16px;
     }
@@ -147,6 +178,7 @@ footer{
         width: 100px;
     }
     #menu{
-        width: 100px;
+        width: 45px;
+        height: 15px;
     }
 }
